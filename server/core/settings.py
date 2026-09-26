@@ -1,8 +1,8 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    SECRET_KEY:str
     DATABASE_URL:str
+    SECRET_KEY:str
     
     model_config={
         "env_file":".env",
